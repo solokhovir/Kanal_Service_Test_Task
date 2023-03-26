@@ -2,7 +2,5 @@
 venv
 .idea
 __pycache__
-requirements.txt
-dockerfile
 credentials.json
 token.json

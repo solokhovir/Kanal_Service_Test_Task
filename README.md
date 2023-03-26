@@ -24,3 +24,19 @@ python main.py
 ```sh
 python bot.py
 ```
+
+Docker-контейнеры:
+1. Контейнер для авторизации в Google Sheets
+```sh
+docker push solokhovir/google_sheets:latest
+```
+
+2. Контейнер для записи данных в базу
+```sh
+docker push solokhovir/main:latest
+```
+
+3. Контейнер для запуска проверки просроченных поставок
+```sh
+docker push solokhovir/bot:latest
+```
