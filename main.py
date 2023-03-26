@@ -40,7 +40,7 @@ while True:
         else:
             row.append(float(row[2].replace('$', '')) * usd_rate)
         if i > max_id:
-            cur.execute("INSERT INTO order_info_1 (num, order_num, cost_usd, delivery_date, cost_rub) "
+            cur.execute("INSERT INTO order_info (num, order_num, cost_usd, delivery_date, cost_rub) "
                         "VALUES (%s, %s, %s, %s, %s)",
                         (row[0], row[1], row[2],
                          datetime.strptime(row[3], '%d.%m.%Y').date(),
